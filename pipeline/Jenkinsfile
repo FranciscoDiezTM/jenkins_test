@@ -1,4 +1,4 @@
-library "pipeline-globile@master"
+//library "pipeline-globile@master"
 def pipelineParams = [:]
 if (params.OVERRIDE_JOB_PARAMETERS) {
     pipelineParams << params
