@@ -17,9 +17,9 @@ if(env.BRANCH_NAME == "master") {
 pipeline {
     agent any
 
-    options {
-        ansiColor("xterm")
-    }
+    // options {
+    //     ansiColor("xterm")
+    // }
  
     triggers {
         pollSCM ignorePostCommitHooks: true, scmpoll_spec: pollSpec
