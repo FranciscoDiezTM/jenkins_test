@@ -1,0 +1,25 @@
+# For more information about this configuration visit
+# https://docs.fastlane.tools/actions/gym/#gymfile
+# In general, you can use the options available
+# fastlane gym --help
+xcargs("build")
+ scheme(ENV["FASTLANE_XCODE_SCHEME"])
+ output_directory(ENV["FASTLANE_XCODE_BUILD_OUTPUT_DIRECTORY"])
+ workspace(ENV["FASTLANE_XCODE_WORKSPACE_NAME"])
+ archive_path(ENV["PROJECT_NAME"])
+ configuration(ENV["FASTLANE_XCODE_BUILD_CONFIGURATION"])
+ skip_profile_detection(true)
+ skip_package_ipa(false)
+ silent(false)
+ clean(true)
+ derived_data_path(ENV["FASTLANE_XCODE_BUILD_DERIVED_DATA_PATH"])
+ export_method(ENV["FASTLANE_XCODE_BUILD_EXPORT_METHOD"])
+ output_name(ENV["FASTLANE_XCODE_BUILD_OUTPUT_NAME"])      # specify the name of the .ipa file to generate (including file extension)
+ export_team_id(ENV["FASTLANE_XCODE_TEAM_ID"])
+ export_options({
+  signingStyle: "manual",
+  provisioningProfiles: {
+    ENV["FASTLANE_XCODE_BUNDLE_ID"] => ENV["FASTLANE_XCODE_PROVISIONING_PROFILE"]
+  }
+ })
+# sdk("iphoneos9.0")
