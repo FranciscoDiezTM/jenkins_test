@@ -63,4 +63,4 @@ if (params.OVERRIDE_JOB_PARAMETERS) {
     ]
 }
 // pipelineParams.SAST_KIUWAN_PROJECT_NAME = 'functional-userpersonalizationdemo-ios-app'
-compileIOSMainApp pipelineParams
+//compileIOSMainApp pipelineParams
