@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  JenkinsDemo
+//  JenkinsTest
 //
-//  Created by Francisco Diez on 01/06/2020.
+//  Created by Francisco Diez on 02/06/2020.
 //  Copyright © 2020 Globile. All rights reserved.
 //
 
