@@ -1,0 +1,5 @@
+def pipelineParams = [:]
+node {
+	sh 'echo HelloWorld'
+}
+
